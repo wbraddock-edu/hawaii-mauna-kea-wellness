@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Session | Mauna Kea Wellness Spa — Waimea, Hawaii</title>
+  <meta name="description" content="Reserve your lomi lomi massage, hot stone therapy, or spa package at Mauna Kea Wellness Spa in Waimea, Hawaii Island."/>
+  <meta property="og:title" content="Book a Session | Mauna Kea Wellness Spa"/>
+  <meta property="og:description" content="Reserve your lomi lomi massage, hot stone therapy, or spa package at Mauna Kea Wellness Spa in Waimea, Hawaii Island."/>
+  <meta property="og:image" content="https://picsum.photos/1200/630?random=2400"/>
+  <meta property="og:type" content="website"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"DaySpa",
+    "name":"Mauna Kea Wellness Spa",
+    "description":"Traditional Hawaiian spa therapies and modern wellness rituals in Waimea, Hawaii Island.",
+    "url":"https://maunakeawellness.com",
+    "telephone":"(808) 555-0125",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"65-1158 Mamalahoa Hwy",
+      "addressLocality":"Waimea",
+      "addressRegion":"HI",
+      "postalCode":"96743",
+      "addressCountry":"US"
+    },
+    "openingHours":"Tu-Su 09:00-19:00",
+    "priceRange":"$$–$$$",
+    "image":"https://picsum.photos/800/600?random=2401"
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Mauna Kea Wellness Spa">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <circle cx="18" cy="18" r="17" fill="#4A235A"/>
+        <ellipse cx="18" cy="18" rx="9" ry="11" fill="none" stroke="#D7BDE2" stroke-width="1.5"/>
+        <path d="M18 7 Q22 13 18 18 Q14 13 18 7Z" fill="#D7BDE2" opacity="0.6"/>
+        <path d="M11 22 Q14 18 18 20 Q22 18 25 22" stroke="#D7BDE2" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <circle cx="18" cy="18" r="2.5" fill="#D7BDE2"/>
+      </svg>
+      <span>Mauna Kea Wellness</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="index.html" class="">Home</a>
+<a href="services.html" class="">Services</a>
+<a href="about.html" class="">About</a>
+<a href="gallery.html" class="">Gallery</a>
+<a href="blog.html" class="">Blog</a>
+<a href="booking.html" class="active">Book a Spa Day</a>
+<a href="faq.html" class="">FAQ</a>
+<a href="reviews.html" class="">Reviews</a>
+    </nav>
+    <div class="header-actions">
+      <a href="booking.html" class="btn-book-header">Book Now</a>
+      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html" class="">Home</a>
+<a href="services.html" class="">Services</a>
+<a href="about.html" class="">About</a>
+<a href="gallery.html" class="">Gallery</a>
+<a href="blog.html" class="">Blog</a>
+<a href="booking.html" class="active">Book a Spa Day</a>
+<a href="faq.html" class="">FAQ</a>
+<a href="reviews.html" class="">Reviews</a>
+  </nav>
+</header>
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Book a Session</span></div>
+      <h1>Reserve Your Session</h1>
+      <p>Begin your healing journey. Select your service, choose your time, and we will take care of the rest.</p>
+    </div>
+  </div>
+
+  <section class="booking-section">
+    <div class="container">
+      <div class="booking-container">
+        <div class="step-indicators">
+          <div class="step-indicator active" id="step-ind-1">1. Service</div>
+          <div class="step-indicator" id="step-ind-2">2. Date & Time</div>
+          <div class="step-indicator" id="step-ind-3">3. Your Details</div>
+          <div class="step-indicator" id="step-ind-4">4. Confirm</div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="form-step active" id="step-1">
+          <div class="form-card">
+            <h2>Choose Your Service</h2>
+            <div class="service-options">
+              <div class="service-option" data-value="lomi-lomi"><h4>Lomi Lomi</h4><p>From $145</p></div>
+              <div class="service-option" data-value="hot-stone"><h4>Hot Stone</h4><p>From $165</p></div>
+              <div class="service-option" data-value="deep-tissue"><h4>Deep Tissue</h4><p>From $135</p></div>
+              <div class="service-option" data-value="facial"><h4>Healing Facial</h4><p>From $120</p></div>
+              <div class="service-option" data-value="couples"><h4>Couples Massage</h4><p>From $260</p></div>
+              <div class="service-option" data-value="package"><h4>Spa Package</h4><p>From $295</p></div>
+            </div>
+            <div class="form-group">
+              <label>Session Length</label>
+              <select>
+                <option>60 minutes</option>
+                <option>75 minutes</option>
+                <option>90 minutes</option>
+                <option>Full Day Package</option>
+              </select>
+            </div>
+            <div class="form-nav">
+              <span></span>
+              <button class="btn-primary" data-next="2">Next: Date & Time →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step" id="step-2">
+          <div class="form-card">
+            <h2>Select Date & Time</h2>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date" min="2024-12-01"/>
+            </div>
+            <div class="form-group">
+              <label>Preferred Therapist</label>
+              <select>
+                <option>No preference</option>
+                <option>Leilani Kahananui (Lomi Lomi Specialist)</option>
+                <option>Koa Akana (Hot Stone & Deep Tissue)</option>
+                <option>Nalani Ferreira (Facials)</option>
+                <option>Makoa Silva (Lomi Lomi & Prenatal)</option>
+              </select>
+            </div>
+            <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:14px">Available times for your selected date:</p>
+            <div class="time-slots">
+              <button class="time-slot" onclick="this.classList.toggle('selected')">9:00 AM</button>
+              <button class="time-slot" onclick="this.classList.toggle('selected')">10:30 AM</button>
+              <button class="time-slot" onclick="this.classList.toggle('selected')">12:00 PM</button>
+              <button class="time-slot" onclick="this.classList.toggle('selected')">1:30 PM</button>
+              <button class="time-slot" onclick="this.classList.toggle('selected')">3:00 PM</button>
+              <button class="time-slot" onclick="this.classList.toggle('selected')">4:30 PM</button>
+            </div>
+            <div class="form-nav">
+              <button class="btn-outline" data-prev="1">← Back</button>
+              <button class="btn-primary" data-next="3">Next: Your Details →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step" id="step-3">
+          <div class="form-card">
+            <h2>Your Details</h2>
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your full name"/>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com"/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(808) 555-0000"/>
+            </div>
+            <div class="form-group">
+              <label>Health Notes or Special Requests</label>
+              <textarea placeholder="Any injuries, health conditions, allergies, or preferences we should know about..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>How Did You Hear About Us?</label>
+              <select>
+                <option>Google Search</option>
+                <option>Friend or Family Referral</option>
+                <option>Social Media</option>
+                <option>Hotel Recommendation</option>
+                <option>Returning Guest</option>
+              </select>
+            </div>
+            <div class="form-nav">
+              <button class="btn-outline" data-prev="2">← Back</button>
+              <button class="btn-primary" data-next="4">Review Booking →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="form-step" id="step-4">
+          <div class="confirmation-box">
+            <div style="font-size:3rem;margin-bottom:16px">🌺</div>
+            <h3>Booking Confirmed!</h3>
+            <p>Mahalo for choosing Mauna Kea Wellness Spa. Your healing journey has begun. We will send a confirmation to your email within a few minutes.</p>
+            <p style="margin-bottom:28px">Please arrive 10–15 minutes before your session. We request 24 hours notice for cancellations or rescheduling.</p>
+            <a href="index.html" class="btn-primary" style="margin-right:12px">Return Home</a>
+            <a href="services.html" class="btn-outline">Explore More Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-label="Mauna Kea Wellness Spa logo">
+            <circle cx="18" cy="18" r="17" fill="#4A235A"/>
+            <ellipse cx="18" cy="18" rx="9" ry="11" fill="none" stroke="#D7BDE2" stroke-width="1.5"/>
+            <path d="M18 7 Q22 13 18 18 Q14 13 18 7Z" fill="#D7BDE2" opacity="0.6"/>
+            <path d="M11 22 Q14 18 18 20 Q22 18 25 22" stroke="#D7BDE2" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <circle cx="18" cy="18" r="2.5" fill="#D7BDE2"/>
+          </svg>
+          <span>Mauna Kea Wellness</span>
+        </div>
+        <p>A sanctuary of healing on Hawaii Island. Traditional Hawaiian therapies and modern wellness rituals nestled in the heart of Waimea.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Lomi Lomi Massage</a></li>
+          <li><a href="services.html">Hot Stone Therapy</a></li>
+          <li><a href="services.html">Deep Tissue Massage</a></li>
+          <li><a href="services.html">Healing Facials</a></li>
+          <li><a href="services.html">Couples Massage</a></li>
+          <li><a href="services.html">Spa Packages</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Wellness Blog</a></li>
+          <li><a href="booking.html">Book a Session</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="reviews.html">Guest Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <ul class="footer-contact">
+          <li>📍 65-1158 Mamalahoa Hwy, Waimea, HI 96743</li>
+          <li>📞 <a href="tel:+18085550125" style="color:rgba(255,255,255,0.7)">(808) 555-0125</a></li>
+          <li>✉️ aloha@maunakeawellness.com</li>
+          <li>🕐 Tue–Sun: 9 AM – 7 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Mauna Kea Wellness Spa. All rights reserved.</span>
+      <span>Powered by <a href="https://designholistically.com" target="_blank" rel="noopener">Design Holistically</a></span>
+    </div>
+  </div>
+</footer>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>

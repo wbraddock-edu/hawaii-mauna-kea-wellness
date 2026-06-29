@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | Mauna Kea Wellness Spa — Waimea, Hawaii</title>
+  <meta name="description" content="Mauna Kea Wellness Spa admin dashboard — bookings, messages, and spa management."/>
+  <meta property="og:title" content="Admin Dashboard | Mauna Kea Wellness Spa"/>
+  <meta property="og:description" content="Mauna Kea Wellness Spa admin dashboard — bookings, messages, and spa management."/>
+  <meta property="og:image" content="https://picsum.photos/1200/630?random=2400"/>
+  <meta property="og:type" content="website"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"DaySpa",
+    "name":"Mauna Kea Wellness Spa",
+    "description":"Traditional Hawaiian spa therapies and modern wellness rituals in Waimea, Hawaii Island.",
+    "url":"https://maunakeawellness.com",
+    "telephone":"(808) 555-0125",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"65-1158 Mamalahoa Hwy",
+      "addressLocality":"Waimea",
+      "addressRegion":"HI",
+      "postalCode":"96743",
+      "addressCountry":"US"
+    },
+    "openingHours":"Tu-Su 09:00-19:00",
+    "priceRange":"$$–$$$",
+    "image":"https://picsum.photos/800/600?random=2401"
+  }
+  </script>
+</head>
+<body>
+<body class="admin-page">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="17" fill="#4A235A"/>
+        <ellipse cx="18" cy="18" rx="9" ry="11" fill="none" stroke="#D7BDE2" stroke-width="1.5"/>
+        <path d="M18 7 Q22 13 18 18 Q14 13 18 7Z" fill="#D7BDE2" opacity="0.6"/>
+        <circle cx="18" cy="18" r="2.5" fill="#D7BDE2"/>
+      </svg>
+      Admin Panel
+    </a>
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+  </div>
+</header>
+
+<div id="adminLogin">
+  <div class="login-card">
+    <h2>Spa Admin</h2>
+    <p>Mauna Kea Wellness Spa — Staff Portal</p>
+    <form id="adminLoginForm">
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="adminPassword" placeholder="Enter password" required/>
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<div id="adminPanel">
+  <div class="container">
+    <div class="admin-header-bar">
+      <h1>Dashboard</h1>
+      <div style="display:flex;gap:12px;align-items:center">
+        <span style="font-size:0.9rem;color:var(--text-muted)">Welcome, Leilani</span>
+        <button class="admin-logout" onclick="document.getElementById('adminPanel').style.display='none';document.getElementById('adminLogin').style.display='flex'">Sign Out</button>
+      </div>
+    </div>
+
+    <div class="admin-stats">
+      <div class="admin-stat"><div class="number">28</div><div class="label">Bookings This Month</div></div>
+      <div class="admin-stat"><div class="number">6</div><div class="label">Sessions Today</div></div>
+      <div class="admin-stat"><div class="number">$4,820</div><div class="label">Revenue MTD</div></div>
+      <div class="admin-stat"><div class="number">4.9★</div><div class="label">Avg Review Score</div></div>
+    </div>
+
+    <div class="admin-table-wrap">
+      <h2>Upcoming Bookings</h2>
+      <div style="overflow-x:auto">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Guest</th><th>Service</th><th>Therapist</th><th>Date</th><th>Time</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Keiko N.</td><td>Lomi Lomi (90 min)</td><td>Leilani K.</td><td>Dec 30, 2024</td><td>9:00 AM</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+            <tr><td>James O.</td><td>Hot Stone (75 min)</td><td>Koa A.</td><td>Dec 30, 2024</td><td>10:30 AM</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+            <tr><td>Sarah K.</td><td>Deep Tissue (60 min)</td><td>Makoa S.</td><td>Dec 30, 2024</td><td>12:00 PM</td><td><span class="badge badge-pending">Pending</span></td></tr>
+            <tr><td>Priya & Rajan T.</td><td>Couples Sanctuary Pkg</td><td>Leilani + Koa</td><td>Dec 31, 2024</td><td>10:00 AM</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+            <tr><td>Tom H.</td><td>Healing Facial</td><td>Nalani F.</td><td>Dec 31, 2024</td><td>1:30 PM</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+            <tr><td>Lisa M.</td><td>Lomi Lomi (60 min)</td><td>Makoa S.</td><td>Jan 2, 2025</td><td>11:00 AM</td><td><span class="badge badge-pending">Pending</span></td></tr>
+            <tr><td>Marcus W.</td><td>Mauna Kea Retreat Pkg</td><td>Koa A.</td><td>Jan 3, 2025</td><td>9:30 AM</td><td><span class="badge badge-confirmed">Confirmed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="admin-table-wrap">
+      <h2>Recent Messages</h2>
+      <div style="overflow-x:auto">
+        <table class="admin-table">
+          <thead>
+            <tr><th>Name</th><th>Subject</th><th>Received</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Aiko H.</td><td>Question about lomi lomi for first-time visitor</td><td>Dec 29, 2024</td><td><span class="badge badge-pending">New</span></td></tr>
+            <tr><td>Sarah K.</td><td>Reschedule request — Jan 2 session</td><td>Dec 28, 2024</td><td><span class="badge badge-pending">New</span></td></tr>
+            <tr><td>Hotel Hapuna</td><td>Partnership inquiry for guest referrals</td><td>Dec 27, 2024</td><td><span class="badge badge-confirmed">Replied</span></td></tr>
+            <tr><td>Tom H.</td><td>Gift certificate for spouse — anniversary</td><td>Dec 26, 2024</td><td><span class="badge badge-completed">Complete</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
